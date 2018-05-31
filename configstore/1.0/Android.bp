@@ -45,10 +45,8 @@ cc_library {
     generated_sources: ["android.hardware.configstore@1.0_genc++"],
     generated_headers: ["android.hardware.configstore@1.0_genc++_headers"],
     export_generated_headers: ["android.hardware.configstore@1.0_genc++_headers"],
-    vendor_available: true,
-    vndk: {
-        enabled: true,
-    },
+    vendor: true,
+    
     shared_libs: [
         "libhidlbase",
         "libhidltransport",
